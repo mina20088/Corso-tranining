@@ -1,0 +1,23 @@
+{
+  "name": "corso-tranining",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "rollup:start": "rollup --config  --bundleConfigAsCjs  --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "five-server": "^0.3.3",
+    "nodemon": "^3.1.4",
+    "rollup": "^4.21.3",
+    "rollup-plugin-sass": "^1.13.2",
+    "sass": "^1.78.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3"
+  }
+}
