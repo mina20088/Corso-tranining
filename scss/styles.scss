@@ -1,2 +1,18 @@
 @import "./bootstrap";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+
+@media(min-width:576px){
+    .navbar-toggler{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:575.9px){
+    .navbar-toggler{
+        margin-top: 0.5rem;
+    }
+}
 

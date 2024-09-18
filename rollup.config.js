@@ -8,6 +8,6 @@ export  default {
     },
     plugins: [
         nodeResolve(),
-        sass({output:'dist/app.css'})
+        sass({output:'dist/app.css',includePaths:['node_modules']})
     ],
 }
