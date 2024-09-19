@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -6398,7 +6399,7 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-width: 250px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
@@ -13432,6 +13433,50 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*!
+ * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+:root, :host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
+}
+.far,
+.fa-regular {
+  font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+:root, :host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
+}
+.fas,
+.fa-solid {
+  font-weight: 900;
+}
+
 /*!
  * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21677,57 +21722,51 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-:root, :host {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
-}
-.far,
-.fa-regular {
-  font-weight: 400;
-}
-
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-:root, :host {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
-}
-.fas,
-.fa-solid {
-  font-weight: 900;
-}
-
 @media (min-width: 576px) {
+  .navbar-nav li a {
+    color: white;
+  }
+  .navbar-nav li a:hover {
+    color: #ffc107;
+  }
   .navbar-toggler {
     margin-top: 1rem;
+  }
+  .offcanvas {
+    opacity: 80%;
+  }
+  .offcanvas .offcanvas-header h1, .offcanvas .offcanvas-header .h1 {
+    color: #ffc107;
+    font-family: "Playpen", cursive;
+    font-size: 2em;
+    font-weight: 800;
   }
 }
 @media (max-width: 575.9px) {
   .navbar-toggler {
     margin-top: 0.5rem;
+  }
+  .navbar-nav {
+    justify-content: center;
+    align-items: start;
+  }
+  .navbar-nav li a {
+    color: white;
+    font-size: 1.2em;
+  }
+  .navbar-nav li a:hover {
+    color: #ffc107;
+  }
+  .offcanvas {
+    opacity: 90%;
+  }
+  .offcanvas-header {
+    flex-direction: column;
+  }
+  .offcanvas-header h1, .offcanvas-header .h1 {
+    color: #ffc107;
+    font-family: "Playpen", cursive;
+    font-size: 2em;
+    font-weight: 800;
   }
 }

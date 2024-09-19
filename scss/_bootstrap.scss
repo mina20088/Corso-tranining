@@ -13,6 +13,7 @@ $spacers: (
   9: $spacer * 7,
 );
 $toggler-icon-bg:rgb(255, 255, 255);
+$offcanvas-horizontal-width:250px;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
