@@ -39,15 +39,34 @@
         justify-content: center;
         align-items: start;
         li{
-            a{
-                color: white;
-                font-size: 1.2em;
-                &:hover{
-                    color: $warning;
+            &:nth-child(n-1){
+                a{
+                    color: white;
+                    font-size: 1.2em;
+                    &:hover{
+                        color: $warning;
+                    }
                 }
             }
-        }
+            &:nth-child(6){
+                ul{
+                    li{
+                        a{
+                            svg{
+                                color: $warning;
+                            }
 
+                        }
+                        &:nth-child(2)
+                        {
+                            margin-left: 1rem;
+
+                        }
+                    }
+                }
+            }
+
+        }
     }
     .offcanvas{
         opacity: 90%;

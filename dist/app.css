@@ -21750,12 +21750,18 @@ readers do not read off random characters that represent icons */
     justify-content: center;
     align-items: start;
   }
-  .navbar-nav li a {
+  .navbar-nav li:nth-child(n-1) a {
     color: white;
     font-size: 1.2em;
   }
-  .navbar-nav li a:hover {
+  .navbar-nav li:nth-child(n-1) a:hover {
     color: #ffc107;
+  }
+  .navbar-nav li:nth-child(6) ul li a svg {
+    color: #ffc107;
+  }
+  .navbar-nav li:nth-child(6) ul li:nth-child(2) {
+    margin-left: 1rem;
   }
   .offcanvas {
     opacity: 90%;
